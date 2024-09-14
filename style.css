@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 150px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 150px;
+}
+#box1{
+    width: 150px;
+}
+#box2{
+    width: 1800px;
+    text-align: center; 
+}
+h1{
+    color: red;
+}
+#clgname{
+    font-size: 45px;
+}
+#text1{
+    color: black;
+}
+#bits{
+    font-size: 20px;
+}
+#scrolltext{
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    background-color: rgba(173, 216, 230, 0.247);
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 266px;
+    float: left;
+    text-align: center;
+    line-height: 49px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}
+ul li a{
+    color: black;
+    font-size: 20px ;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display:block;
+}
+ul li:hover{
+    background-color: aliceblue;
+    text-decoration: underline ;
+}
+.outbox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+    z-index: -1;
+}
+#in1{
+    width: 680px;
+    background-image: url(img4.jpg);
+    background-repeat: no-repeat;
+    background-size: 680px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(img2.jpg);
+    }
+    20%{
+        background-image: url(img3.jpg);
+    }
+    30%{
+        background-image: url(img1.jpg);
+    }
+    40%{
+        background-image: url(img5.jpg);
+    }
+    50%{
+        background-image: url(img6.jpg);
+    }
+}
+#in2{
+     width: 490px;
+     text-align: center;
+}
+#in3{
+    width: 490px;
+    text-align: center;
+}
+#text2{
+    color: red;
+}
+#text3{
+    color: red;
+}
